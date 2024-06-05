@@ -15,3 +15,7 @@ Route::post('/profile', [UserProfileController::class, 'saveProfile'])->name('sa
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('/test', function () {
+    return view('profile_response2');
+});

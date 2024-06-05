@@ -31,7 +31,7 @@
                 Copyright Ⓒ 2024 Preper Project Authors. All Right Reserved
             </p>
             <p>
-                <a href="{{ route('about') }}"><u>Tentang Kami</u></a> | <a href=""><u>Hubungi Kami</u></a>
+                <a href="{{ route('about') }}"><u>Tentang Kami</u></a> | <a href="" target='_blank'><u>Hubungi Kami</u></a>
             </p>
 
         </footer>
