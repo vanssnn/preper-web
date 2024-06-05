@@ -9,11 +9,11 @@
 
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        
+
     <body class="bg-bgc">
         <nav class="bg-accent flex justify-end px-5 text-bgc text-center py-7 gap-4">
-            <a href="#"><p>BERANDA</p></a>
-            <a href="#"><p>TENTANG KAMI</p></a>
+            <a href="{{ route('home') }}"><p>BERANDA</p></a>
+            <a href="{{ route('about') }}"><p>TENTANG KAMI</p></a>
         </nav>
 
         {{ $slot }}
@@ -26,12 +26,12 @@
                     </a>
                 </span>
             </div>
-            
-            <p>  
+
+            <p>
                 Copyright Ⓒ 2024 Preper Project Authors. All Right Reserved
             </p>
             <p>
-                <a href=""><u>Tentang Kami</u></a> | <a href=""><u>Hubungi Kami</u></a>
+                <a href="{{ route('about') }}"><u>Tentang Kami</u></a> | <a href=""><u>Hubungi Kami</u></a>
             </p>
 
         </footer>

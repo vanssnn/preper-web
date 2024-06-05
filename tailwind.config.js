@@ -11,6 +11,7 @@ export default {
         txt: "#100F0F",
         bgc: "#FDFCFC",
         accent: "#E7606A",
+        button: "#B04F56",
         btnprimary: "#B04F56",
         btnsecondary: "#DE8B90"
       }

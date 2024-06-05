@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile</title>
+<x-layout>
+<body>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .form-check-label {
@@ -36,8 +32,7 @@
             color: #fff;
         }
     </style>
-</head>
-<body>
+    <div>Anda ingin menjadi</div>
     <div class="container mt-5">
         <form action="{{ route('save.profile', ['id' => request()->query('id')]) }}" method="POST">
             @csrf
@@ -66,6 +61,7 @@
                     </div>
                 @endforeach
             </div>
+            <x-button>Simpan</x-button>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>
@@ -86,4 +82,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>
-</html>
+</x-layout>
