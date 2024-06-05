@@ -8,6 +8,7 @@ use App\Http\Controllers\UserProfileController;
 Route::get('/request-sesi', [SessionRequestController::class, 'showForm']);
 Route::post('/submit-form', [SessionRequestController::class, 'submitForm'])->name('submit.form');
 Route::get('/', [NavigationController::class, 'home'])->name('home');
+
 Route::get('/profile', [UserProfileController::class, 'showProfile']);
 Route::post('/profile', [UserProfileController::class, 'saveProfile'])->name('save.profile');
 
