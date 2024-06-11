@@ -8,6 +8,7 @@ use App\Models\TrMentoringSchedule;
 use App\Models\MsSubject;
 use Illuminate\Support\Str;
 
+
 class SessionRequestController extends Controller
 {
     public function showForm(Request $request)
@@ -50,7 +51,7 @@ class SessionRequestController extends Controller
             'Batch 3 (11:20 - 13:00)' => '11:20',
             'Batch 4 (13:20 - 15:00)' => '13:20',
             'Batch 5 (15:20 - 17:00)' => '15:20',
-            'Batch 6 (17:20 - 19:00)' => '17:20',
+            'Batch 6 (17:20 - 19:00)' => '17:20'
         ];
 
         $startTime = $batchTimes[$validatedData['batch']];
