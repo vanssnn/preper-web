@@ -10,7 +10,7 @@
     <header class="bg-accent relative h-36">
         <div class="absolute bottom-0 px-5">
             <div class="text-bgc gap-5 flex flex-1 flex-col-reverse sm:flex-row justify-between items-end px=5">
-                <p class="text-9xl font-extrabold">perminataan sesi</p>
+                <p class="text-7xl md:text-9xl font-extrabold">permintaan sesi</p>
             </div>
         </div>
     </header>
@@ -53,7 +53,7 @@
                 <input type="text" class=" w-full rounded-lg p-2 border-accent border-4 tracking-wide" id="specificTopic" name="specificTopic" placeholder="Matematika Minat">
             </div>
             <div x-data="{ selectedBatch: null }" class="mb-3">
-                <label class=" font-bold py-2">Pilih batch untuk (dd-mm-yyyy):</label>
+                <label class=" font-bold py-2">Pilih batch untuk tanggal {{ date('d-m-Y', strtotime('+1 day')) }}:</label>
                 <div class="form-check mb-2">
                     <input class=" hidden" type="radio" id="batch1" name="batch" value="Batch 1 (07:20 - 09:00)" x-model="selectedBatch">
                     <label class="form-check-label flex items-center gap-2 cursor-pointer" for="batch1">

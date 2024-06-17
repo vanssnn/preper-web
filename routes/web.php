@@ -17,5 +17,5 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/test', function () {
-    return view('profile_response2');
+    return view('profile_response');
 });

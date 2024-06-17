@@ -13,10 +13,11 @@
             border-radius: 0;
         }
     </style>
+
     <header class="bg-accent relative h-36">
         <div class="absolute bottom-0 px-5">
             <div class="text-bgc gap-5 flex flex-1 flex-col-reverse sm:flex-row justify-between items-end px=5">
-                <p class="text-9xl font-extrabold">profil</p>
+                <p class="text-7xl md:text-9xl font-extrabold">profil</p>
             </div>
         </div>
     </header>
